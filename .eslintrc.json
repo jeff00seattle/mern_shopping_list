@@ -1,0 +1,70 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "env": {
+    "jest": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": "off",
+    "no-unused-expressions": [
+      "warn",
+      {
+        "allowTaggedTemplates": true
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "after-used",
+        "varsIgnorePattern": "^restProps$"
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": []
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "comma-dangle": ["warn", "only-multiline"],
+    "function-paren-newline": ["warn", "consistent"],
+    "import/no-extraneous-dependencies": [
+      "warn",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.story.js",
+          "./scripts/**/*.js"
+        ],
+        "optionalDependencies": false
+      }
+    ],
+    "react/jsx-filename-extension": "off",
+    "react/jsx-max-props-per-line": [
+      "warn",
+      {
+        "maximum": 1,
+        "when": "always"
+      }
+    ],
+    "react/jsx-first-prop-new-line": "warn",
+    "react/jsx-sort-default-props": "warn",
+    "react/no-did-mount-set-state": "off",
+    "react/sort-prop-types": "warn",
+    "semi": ["warn", "never"]
+  }
+}
+
