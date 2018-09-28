@@ -6,7 +6,6 @@ import { getItems, deleteItem } from "../actions/itemActions";
 import PropTypes from 'prop-types';
 
 class ShoppingList extends React.Component {
-
     componentDidMount() {
         this.props.getItems();
     }
